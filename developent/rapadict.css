@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Krona One;
+  
+    /* background-repeat: no-repeat; */
+    text-decoration: none;
+  
+
+}
+@keyframes anime {
+    0%{
+        
+
+    
+    }
+  
+    100%
+    {
+        transform:translateX(1vw) ;
+
+
+
+    }
+}
+
+body{
+   /* background-image: url(/assets/bacground.jpg); */
+   background-color:#272829;
+   background-size:cover;
+
+   background-repeat: no-repeat;
+  
+}
+
+
+
+.header
+
+{
+    
+   
+    align-items: center;
+    display: flex;
+    /* background-color: rgb(57, 57, 55); */
+    justify-content: space-between;
+    /* width: 100%; */
+    height: 10vh;
+    /* background-color: rgb(237, 212, 212); */
+    border-bottom:0.3vh solid grey;
+
+    
+    margin-top: 1vh;
+    /* padding-left:40px;  */
+    padding-left: 2.5vw;
+   
+    
+    
+}
+.header h1
+{
+    font-size:3vw;
+    color: #D8D9DA;
+    
+}
+.logo
+{
+   align-items: center;
+    display: flex;
+}
+
+.logo img {
+    
+    height: 2vw;
+    margin-left: 10px;
+    animation: anime ;
+   
+    animation-duration: 0.4s;
+    
+    
+}
+
+.nav ul 
+{
+    display: flex;
+    
+    
+    /* padding-left: 60vw; */
+    /* width:10em; */
+  
+}
+.nav ul li{
+   
+    
+    text-decoration: none;
+  list-style: none;
+
+  padding :2vw;
+  
+}
+.nav ul li a
+{
+    /* width: 200px; */
+   
+    color:#FFF6E0;
+}
+
+.nav ul li a:hover
+{
+    /* text-transform:uppercase; */
+    border-bottom: 0.2vw solid white;
+
+}
+
+
+.genreslist
+{
+    /* background-color: #CD1818; */
+    margin-top: 4vh;
+    max-width: 100%;
+    padding-left: 2.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.genre1,.genre2,.genre3,.genre4,.genre5
+{
+    width: 13vw;
+    height: 4vh;
+    text-align: center;
+
+    border-radius: 1vw;
+    border-top:3px solid rgb(128, 128, 128);
+
+   
+    background-color: #61677A;
+}
+
+.genre1 a,.genre2 a,.genre3 a,.genre4 a,.genre5 a{
+    font-size: 1vw;
+
+
+    color:#FFF6E0;
+  
+}
+/* genrelist hover effect */
+.genre1 a:hover,.genre2 a:hover,.genre3 a:hover,.genre4 a:hover,.genre5 a:hover
+{
+    color: #CD1818;
+   text-transform: capitalize;
+    
+
+}
+
+
+.top-artist
+{
+   
+ 
+    /* color: white; */
+    display: flex;
+    margin-left:2.5vw ;
+    margin-top: 1vw;
+    /* height: 3vw; */
+    width: 20vw;
+    justify-content: center;
+    /* background-color:rgb(188, 37, 37); */
+    margin-bottom: 1vw;
+}
+.top-artist label
+{
+    font-size: 1vw;
+}
+.top-artist select
+{
+    width: 10vw;
+    margin-left: 2vw;
+    background-color:#D8D9DA ;
+    border-radius: 10vw;
+    /* border-bottom:2px solid rgb(84, 84, 80); */
+
+}
+.top-artist label
+{
+    color: #CD1818;
+}
+.top-artist select option
+
+{
+    text-align: center;
+     font-family: "KRONA ONE";
+}
+.artist-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+
+   
+    padding-left: 5.5vw;
+    
+}
+
+.artist-component
+{
+    /* margin-top: 2vw; */
+    display: flex;
+   
+    height: fit-content;
+    align-items: center;
+    /* justify-content: center; */
+}
+.artist-img
+{
+    height: 6vw;
+    width: 6vw;
+    background-color: #dadada;
+    
+
+    border-radius: 1.3vw;
+    /* overflow: hidden; */
+
+
+}
+.artist-img img
+{
+    image-resolution:var(8vw,8vw);
+    border-radius: 1vw;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    margin-left: 0.4vw;
+    margin-top: 0.3vw;
+
+    
+    width:5vw;
+    /* height: 27.12vh; */
+    /* height should be change */
+    
+}
+.artist-img img:hover
+{
+    scale: 1.1;
+
+}
+
+.artist-info
+
+{
+    padding-top: 2vw;
+    height:5vw ;
+    /* background:linear-gradient(90deg,#D9D9D9,white) ; */
+    margin-left: 1vw;
+    font-size: 0.8vw;
+    color: white
+}
+.rating
+{
+    
+    font-size: 0.8vw;
+    display: flex;
+    
+}
+.rating img
+{
+    width: 1vw;
+}
